@@ -25,7 +25,7 @@ $nsupdateformat = 'curl -s https://www.cloudflare.com/api.html?a=DIUP\&hosts="%s
 $stufftodo=false;
 
 if($currentv4 != $submittedv4) {
-  $stufftodo = false;
+  $stufftodo = true;
   print sprintf("%s changing from %s to %s\n", $host, $currentv4, $submittedv4);
 }
 
